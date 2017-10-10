@@ -1,0 +1,176 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ScheduleVis.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="selectServices" Type="System.String" Scope="User">
+      <Value Profile="(Default)">prefix tt: &lt;http://purl.org/rail/tt/&gt; 
+CONSTRUCT  
+{
+  ?serviceName a tt:ScheduledService .
+  ?serviceName rdfs:label ?lab
+}
+WHERE
+{ 
+   ?serviceName a tt:ScheduledService .
+   OPTIONAL{?serviceName rdfs:label ?lab}
+}
+</Value>
+    </Setting>
+    <Setting Name="RDFType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Value>
+    </Setting>
+    <Setting Name="ScheduledService" Type="System.String" Scope="User">
+      <Value Profile="(Default)"> http://purl.org/rail/tt/ScheduledService</Value>
+    </Setting>
+    <Setting Name="Label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.w3.org/2000/01/rdf-schema#label</Value>
+    </Setting>
+    <Setting Name="GetServiceNodes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CONSTRUCT 
+{
+   &lt;http://purl.org/rail/resource/TTService978&gt;  tt:serviceNode  ?serviceNode . 
+  ?serviceNode rdfs:label ?lab
+  
+}
+WHERE 
+{ &lt;http://purl.org/rail/resource/TTService978&gt; tt:serviceNode ?serviceNode .
+ 	OPTIONAL{?serviceNode rdfs:label ?lab}
+}</Value>
+    </Setting>
+    <Setting Name="StationGraphBase" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://purl.org/rail/resource/</Value>
+    </Setting>
+    <Setting Name="ProvNS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.w3.org/ns/prov#</Value>
+    </Setting>
+    <Setting Name="ProvActivity" Type="System.String" Scope="User">
+      <Value Profile="(Default)">prov:Activity</Value>
+    </Setting>
+    <Setting Name="ProvStartedAtTime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">prov:startedAtTime</Value>
+    </Setting>
+    <Setting Name="ProvWasAttributedTo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">prov:wasAttributedTo</Value>
+    </Setting>
+    <Setting Name="FileSpecString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FILE-SPEC=05 1.00</Value>
+    </Setting>
+    <Setting Name="ResourceBaseURI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://purl.org/rail/resource/</Value>
+    </Setting>
+    <Setting Name="ImportedFilesSubDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SourceFiles</Value>
+    </Setting>
+    <Setting Name="provUsed" Type="System.String" Scope="User">
+      <Value Profile="(Default)">prov:Used</Value>
+    </Setting>
+    <Setting Name="provGeneratedTime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">prov:generatedAtTime</Value>
+    </Setting>
+    <Setting Name="racoonUpper" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://purl.org/ub/upper/</Value>
+    </Setting>
+    <Setting Name="racoonIS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://purl.org/rail/is/</Value>
+    </Setting>
+    <Setting Name="RDFS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.w3.org/2000/01/rdf-schema#</Value>
+    </Setting>
+    <Setting Name="Location" Type="System.String" Scope="User">
+      <Value Profile="(Default)">u:Location</Value>
+    </Setting>
+    <Setting Name="TiplocLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">is:TiplocLocation</Value>
+    </Setting>
+    <Setting Name="Language" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en-GB</Value>
+    </Setting>
+    <Setting Name="tiplocCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">is:tiplocCode</Value>
+    </Setting>
+    <Setting Name="Geo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.w3.org/2003/01/geo/wgs84_pos#</Value>
+    </Setting>
+    <Setting Name="ID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">u:id</Value>
+    </Setting>
+    <Setting Name="Lat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">wgspos:lat</Value>
+    </Setting>
+    <Setting Name="Long" Type="System.String" Scope="User">
+      <Value Profile="(Default)">wgspos:long</Value>
+    </Setting>
+    <Setting Name="SpatailRelations" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://data.ordnancesurvey.co.uk/ontology/spatialrelations/</Value>
+    </Setting>
+    <Setting Name="Eastings" Type="System.String" Scope="User">
+      <Value Profile="(Default)">spatialrelations:easting</Value>
+    </Setting>
+    <Setting Name="Northings" Type="System.String" Scope="User">
+      <Value Profile="(Default)">spatialrelations:northing</Value>
+    </Setting>
+    <Setting Name="provWasGeneratedBy" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.w3.org/ns/prov#wasGeneratedBy</Value>
+    </Setting>
+    <Setting Name="provInvalidAtTime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">prov:invalidatedAtTime</Value>
+    </Setting>
+    <Setting Name="NodeOrder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:nodeOrder</Value>
+    </Setting>
+    <Setting Name="Platform" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:platform</Value>
+    </Setting>
+    <Setting Name="PublicArrival" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:pubArrival</Value>
+    </Setting>
+    <Setting Name="PublicDeparture" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:pubDeparture</Value>
+    </Setting>
+    <Setting Name="ttArrival" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:ttArrival</Value>
+    </Setting>
+    <Setting Name="ttDeparture" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:ttDeparture</Value>
+    </Setting>
+    <Setting Name="ttOrder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:ttOrder</Value>
+    </Setting>
+    <Setting Name="PassingTime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:PassingTime</Value>
+    </Setting>
+    <Setting Name="Line" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:Line</Value>
+    </Setting>
+    <Setting Name="Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:Path</Value>
+    </Setting>
+    <Setting Name="Performance" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:PerformanceAllowance</Value>
+    </Setting>
+    <Setting Name="Engineering" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:EngineeringAllowance</Value>
+    </Setting>
+    <Setting Name="Pathing" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:PathingAllowance</Value>
+    </Setting>
+    <Setting Name="TimeTableNameSpace" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://purl.org/rail/tt/</Value>
+    </Setting>
+    <Setting Name="locationPredicate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">u:location</Value>
+    </Setting>
+    <Setting Name="serviceNodePredicate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tt:serviceNode</Value>
+    </Setting>
+    <Setting Name="fNameFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\localData\\CIFData\\output\\{0}_stations.ttl</Value>
+    </Setting>
+    <Setting Name="ScheduleFNameFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\localData\\CIFData\\output\\{0}_Schedules.ttl</Value>
+    </Setting>
+    <Setting Name="fNameOutputText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\localData\\CIFData\\output\\outputText.txt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
